@@ -1,0 +1,230 @@
+.tim-typo {
+    padding-left: 25%;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.tim-typo .tim-note {
+    bottom: 5px;
+    color: #c0c1c2;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    left: 0;
+    margin-left: 20px;
+    position: absolute;
+    width: 260px;
+}
+
+
+/* offline-doc */
+
+.offline-doc .navbar.navbar-transparent {
+    padding-top: 25px;
+    border-bottom: none;
+}
+
+.offline-doc .navbar.navbar-transparent .navbar-minimize {
+    display: none;
+}
+
+.offline-doc .navbar.navbar-transparent .navbar-brand,
+.offline-doc .navbar.navbar-transparent .collapse .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+}
+
+.offline-doc .footer {
+    z-index: 3 !important;
+}
+
+.offline-doc .page-header .container {
+    z-index: 3;
+}
+
+.offline-doc .page-header:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#map {
+    z-index: 2;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+}
+
+
+/*** Estilos personalizados para test**/
+
+.logo-normal {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-pro {
+    bottom: 80px !important;
+    position: absolute;
+}
+
+.active-pro a {
+    text-transform: lowercase !important;
+}
+
+.login-container {
+    width: 100% !important;
+    min-height: 100vh !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 15px;
+}
+
+.bmd-label-floating {
+    font-size: 18px !important;
+}
+
+.is-focused {
+    padding-top: 5px;
+}
+
+.btn-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px !important;
+}
+
+.page-0 p {
+    font-size: 16px !important;
+}
+
+#dashboard {
+    background: #eee;
+}
+
+.content {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("../img/bg-test.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.options {
+    flex-wrap: nowrap !important;
+}
+
+@media (max-width:321px) {
+    .col-md-6 a {
+        padding-left: 12px;
+    }
+    h3 {
+        font-size: 1.2625rem !important;
+    }
+    .pt-4 {
+        padding-top: .5rem !important;
+    }
+}
+
+.formulario input[type="radio"] {
+    display: none;
+}
+
+.formulario label {
+    color: #3d8b40;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid #409444;
+    padding: 0.46875rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.formulario label:hover {
+    color: #ffffff;
+    background-color: #409444;
+    border-color: #3d8b40;
+}
+
+.formulario label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none !important;
+    border: 3px solid #4caf50 !important;
+}
+
+.formulario input[type="radio"]:checked+label:before {
+    display: none;
+}
+
+.formulario input[type="radio"]:checked+label {
+    color: #fff;
+    background-color: #4caf50;
+    border-color: #4caf50;
+    box-shadow: 0 2px 2px 0 rgba(76, 175, 80, .14), 0 3px 1px -2px rgba(76, 175, 80, .2), 0 1px 5px 0 rgba(76, 175, 80, .12);
+}
+
+.formulario label:hover {
+    box-shadow: 0 14px 26px -12px rgba(76, 175, 80, .42), 0 4px 23px 0 rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(76, 175, 80, .2) !important;
+}
+
+@media (max-width:480px) {
+    .formulario input[type="radio"] {
+        display: none !important;
+    }
+    .formulario label:before {
+        content: "";
+        display: none;
+    }
+}
+
+.card .card-footer {
+    display: inline-block;
+    padding-top: 10px !important;
+    margin: 0 !important;
+}
+
+.progress {
+    height: 8px;
+    border-radius: 0;
+    background: #ddd;
+    position: relative;
+    bottom: -20px;
+}
+
+.form-check,
+label {
+    font-size: 16px !important;
+}
