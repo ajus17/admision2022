@@ -1,13 +1,6 @@
 <?php
-include('app/zona_priv.php');
-include('assets/template/cabecera.php');
-include_once('app/dataIntent.php');
-
-$intent=new Data();
-if($intent->getIntento()){
-  header("Location:testing.php");
-}
-
+include "app/zona_priv.php";
+include "assets/template/cabecera.php";
 ?>
  <div class="content login-container page-0">
         <div class="container-fluid ">
@@ -66,8 +59,7 @@ if($intent->getIntento()){
                             <div class="col-md-6 btn-center">
                               <input type="submit" value="Comenzar" class="btn w-50 btn-primary">
                           </div>
-                          
-                          </form>
+                        </form>
                     </div>                    
                 </div>
               </div>

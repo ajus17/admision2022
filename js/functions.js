@@ -39,13 +39,9 @@ $(document).ready(function() {
                         type: 'primary'
                     });
                 } else if (result == 1) {
-                    $.notify({
-                        icon: 'Success',
-                        title: "<strong>Correcto:</strong> ",
-                        message: "Bienvenido"
-                    }, {
-                        type: 'primary'
-                    });
+                    
+                    window.location = '../testform.php';
+
                 }else if (result == 2) {
                     $.notify({
                         icon: 'Error',
